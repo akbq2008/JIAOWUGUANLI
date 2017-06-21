@@ -1,0 +1,11 @@
+#skin .checked {
+    width: 33px;
+    height: 33px;
+    background: url(../image/u=3474258384,3167604542&fm=23&gp=12.jpg) no-repeat;
+    background-size: cover;
+}
+
+body {
+    background: url(../image/u=3474258384,3167604542&fm=23&gp=0.jpg) no-repeat;
+    background-size: cover;
+}

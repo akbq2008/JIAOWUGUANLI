@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<link rel="stylesheet" href="css/login.css" >
+</head>
+<!-- <a href="register.html">注册页面</a> -->
+<body>
+<div id="main_body">
+	<div id="body" > <a href="javascript:;" class='title'>欢迎登录教务管理系统</a>
+		<div class="shadow"> </div>
+		<div class="box_close"></div>
+		<div class="content"> 
+			<!-- login -->
+			<form action='login' method='post' id='form1' autocomplete="off">
+				<dl>
+					<dt class='text1'>身份</dt>
+					<dd>
+						<select name='people' class='select' id='select' style="width: 130px;height: 23px;font:bold;">
+							<option value="student" >学生</option>
+							<option value="teacher">教师</option>
+							<option value="admin">管理员</option>
+						</select>
+					</dd>
+				</dl>
+				<dl>
+					<dt >用户名</dt>
+					<i class='logname input-pic'></i>
+					<dd>
+						<input type='text' name='logname' placeholder='用户名' class='txt' id='logname'/>
+					</dd>
+					<i class='logname-close close'></i> 
+					<!-- placeholder是占位符 -->
+				</dl>
+				<dl>
+					<dt >身份标识</dt>
+					<i class='Idnumber input-pic' ></i>
+					<dd>
+						<input type='text' name='Idnumber' placeholder='身份标识' class='txt' id='Idnumber'/>
+					</dd>
+					<i class='Idnumber-close close'></i>
+				</dl>
+				<dl>
+					<dt>密码</dt>
+					<i class='password input-pic'></i>
+					<dd>
+						<input type='password' name='password' placeholder='密码' class='txt' id='password'/>
+					</dd>
+					<i class='password-close close'></i>
+				</dl>
+				<span><i class="remember_secreate">记住密码</i>
+				<input type="checkbox" name="remember" class="remember"/>
+				</span> <span><a href="#" class='forget_secrete'>忘记密码</a></span> <span>
+				<input type='submit' class='pic1' value=''/>
+				</span> <span>
+				<input type='button' class='pic3' value=''/>
+				</span> <span>
+				<input type='button' class='pic2' value=''/>
+				</span>
+			</form>
+		</div>
+		<div id="error-box"><span class="info"></span></div>
+		<!-- 错误信息盒 --> 
+	</div>
+	<!-- 登录框 1-->
+	<div id="body2" class="pos" style='display: none;'> <a href="javascript:;" class='title'></a>
+		<div class="shadow"> </div>
+		<div class="box_close"></div>
+		<div class="content"> 
+			<!-- registerServlet -->
+			<form action='' method='post' id='form2' autocomplete="off">
+				<dl>
+					<dt >用户名</dt>
+					<i class='logname input-pic'></i>
+					<dd>
+						<input type='text' name='logname' placeholder='用户名' class='txt'  id='logname2'/>
+					</dd>
+					<i class='logname-close close'></i>
+				</dl>
+				<dl>
+					<dt >身份标识</dt>
+					<i class='Idnumber input-pic' ></i>
+					<dd>
+						<input type='text' name='Idnumber' placeholder='身份标识' class='txt' id='Idnumber2'/>
+					</dd>
+					<i class='Idnumber-close close'></i>
+				</dl>
+				<dl>
+					<dt >密码</dt>
+					<i class='password input-pic'></i>
+					<dd>
+						<input type='password' placeholder='密码' class='apassword txt' name='password'  id='password2'/>
+					</dd>
+					<i class='password-close close'></i>
+				</dl>
+				<dl>
+					<dt >确认密码</dt>
+					<i class='again_password input-pic'></i>
+					<dd>
+						<input type='password'  placeholder='确认密码' class='txt'  name='again_password' id='again_password2'/>
+					</dd>
+					<i class='again_password-close close'></i>
+				</dl>
+				<span>
+				<input type='submit' class='pic4' value='提交'/>
+				</span> <span>
+				<input type='button' class='pic5' value='返回'/>
+				</span> <span>
+				<input type='button' class='pic6' value='检验用户名'/>
+				</span>
+			</form>
+		</div>
+		<div id="error-box2"><span class="info1"></span></div>
+	</div>
+	<div id="main-box" style="display:none">
+		<form action="/Handlemodify" method="post" id="form3">
+			<dl>
+				<dt>身份标识</dt>
+				<dd>
+					<input type="text" name='identity' id="identity">
+				</dd>
+			</dl>
+			<dl>
+				<dt>新的密码</dt>
+				<dd>
+					<input type="password" name='password' class="bpassword" id="password3">
+				</dd>
+			</dl>
+			<dl>
+				<dt>确认密码</dt>
+				<dd>
+					<input type="password" name='again_password' id="again_password3">
+				</dd>
+			</dl>
+			<dl>
+				<dt>验证码</dt>
+				<dd class="validate">
+					<input type="text" name='validation' id="validation">
+				</dd>
+			</dl>
+			<span id="v_container"></span>
+			<dl>
+				<button id="btn" >提交</button>
+				<button class="main-box-turnback" >返回</button>
+				<!--  <input type="submit" value="提交" id="btn">
+					  <input type="button" value="返回" class='main-box-turnback'> -->
+			</dl>
+		</form>
+	</div>
+	<div class="info"></div>
+	<div id="foot_line"></div>
+	<!-- 上面的foot_line得在外面，不然的话会被约束宽度不好控制 --> 
+	<!-- 下界线 --> 
+</div>
+<!-- 内容层 -->
+<div id="foot_title">
+	<address>
+	版权所有:河南城建学院二区#二号楼535宿舍
+	</address>
+	<a href="mailto:673161921@qq.com" >邮箱地址:673161921@qq.com</a> <a href="javascript:; " class='foot_a'>联系电话:18236615057</a> <a href="http://www.cnblogs.com/yi-mi-yangguang/">博客:一米阳光!</a> </div>
+<!-- 脚注 --> 
+<script src="js/jquery.js"></script> 
+<script src="js/gVerify.js" charset="utf-8"></script> 
+<script src="js/jquery.validate.js" ></script> 
+<script src="js/jquery.cookie.js"></script> 
+<script src="js/main.js" type='text/javascript'></script> 
+<script src="js/cookie.js" type='text/javascript'></script> 
+<script src="js/drag.js" charset='gbk' type='text/javascript'></script> 
+<script src="js/validate.js" charset='gbk' type='text/javascript'></script>
+</body>
+</html>

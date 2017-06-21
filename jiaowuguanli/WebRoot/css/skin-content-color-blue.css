@@ -1,0 +1,10 @@
+#skin .checked {
+    width: 33px;
+    height: 33px;
+    background: url(../image/userskinscolor.png) 0px -33px no-repeat;
+    background-size: cover;
+}
+
+body {
+    background: #1296db;
+}

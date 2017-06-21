@@ -1,0 +1,459 @@
+@charset="gb2312";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal arial '宋体';
+    overflow: hidden;
+    /*去除滚动条*/
+    width: 100%;
+    background: url(../image/ic_banner.jpg) no-repeat;
+    /* background-size: cover;当用cover的时候，当缩小时，背景图会跟着缩小*/
+}
+
+#main-box {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -200px;
+    text-align: center;
+    display: block;
+    background: #999;
+    width: 400px;
+    height: 310px;
+}
+
+#main-box .main-box-turnback, #btn {
+    cursor: pointer;
+    color: white;
+    font: 18px/20px arial;
+    width: 80px;
+    margin: -10px 20px 0 0;
+    height: 30px;
+    line-height: 30px;
+    background: #438EF4;
+    float: left;
+    position: relative;
+    left: 20px;
+}
+
+#main .main-box-turnback {
+    position: relative;
+    left: 30px;
+    top: 50px;
+}
+
+#main-box dl {
+    padding-top: 15px;
+    margin-top: 15px;
+    margin-left: 70px;
+    position: relative;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#turninto, #turninto2 {
+    cursor: pointer;
+}
+
+#v_container {
+    position: absolute;
+    left: 280px;
+    top: 200px;
+}
+
+#main-box dt, #main-box dd {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+#main-box dd {
+    width: 100px;
+}
+
+#main-box input {
+    float: left;
+    width: 120px;
+    clear: both;
+}
+
+#main .error {
+    color: red;
+}
+
+#body .shadow, #body2 .shadow {
+    border-top: 5px;
+    position: absolute;
+    cursor: move;
+    top: -1px;
+    margin-top: 1px;
+    left: 50%;
+    width: 360px;
+    height: 55px;
+    margin-left: -180px;
+    background: #438EFF;
+    border-bottom: 1px solid #ccc;
+}
+
+#body .title, #body2 .title {
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    top: -8px;
+    left: 50%;
+    margin-left: -120px;
+    pointer-events: none;
+    /*可以取消拖动a标签时出现的效果*/
+    text-decoration: none;
+    color: #f93;
+}
+
+
+/*选项卡1*/
+
+
+/*//IE7.0 Hack!
+*+html #body, #body2 {
+    background-image: url(../image/ic_beijing2.jpg);
+    margin-top: 8px;
+}*/
+
+#body, #body2 {
+    position: absolute;
+    z-index: 2;
+    top: 140px;
+    left: 40%;
+    width: 290px;
+    padding: 20px 35px;
+    opacity: 0.9;
+    filter: alpha(opacity: 90);
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: url(../image/ic_beijing2.jpg) no-repeat;
+    background-size: cover;
+    -webkit-box-shadow: 5px 8px 5px;
+    -moz-box-shadow: 5px 8px 5px;
+    box-shadow: 5px 8px 5px;
+    -o-box-shadow: 5px 8px 5px;
+    /*behavior:url(backgroundsize.min.htc); 
+-ms-behavior:url(backgroundsize.min.htc);*/
+    /*  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(
+    src='http://img0.bdstatic.com/img/image/6992fdda3cc7cd98d10273a6b34233fb80e7aec90cc.jpg',
+    sizingMethod='scale');*/
+    /*   -ms-behavior: url(..js/backgroundsize.min.htc); */
+    /*box-shadow第一个参数是左边，第二个是下边，第三个是模糊*/
+}
+
+
+/*登录框*/
+
+#body .logname, #body2 .logname, #body2 .again_password, #body .Idnumber, #body2 .Idnumber, #body .password, #body2 .password {
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    top: 47px;
+    left: 105px;
+    background: url("../image/spritesheet.png") -3px -55px no-repeat;
+}
+
+#body2 .logname {
+    position: absolute;
+    top: 11px;
+    left: 105px;
+}
+
+#body .Idnumber, #body2 .Idnumber {
+    top: 64px;
+    left: 105px;
+    background: url("../image/spritesheet.png") -3px -29px no-repeat;
+}
+
+#body2 .Idnumber {
+    top: 46px;
+}
+
+#body .password, #body2 .password {
+    top: 80px;
+    left: 105px;
+    background: url("../image/spritesheet.png") -3px -3px no-repeat;
+}
+
+#body2 .password {
+    top: 64px;
+}
+
+#body2 .again_password {
+    top: 83px;
+    left: 105px;
+    background: url("../image/spritesheet.png") -3px -109px no-repeat;
+}
+
+#body .logname-close, #body2 .logname-close, #body .password-close, #body2 .password-close, #body2 .again_password-close, #body .Idnumber-close, #body2 .Idnumber-close {
+    position: absolute;
+    top: 48px;
+    left: 240px;
+    width: 20px;
+    height: 20px;
+    display: none;
+    background: url('../image/spritesheet.png') -3px -83px no-repeat;
+}
+
+#body2 .logname-close {
+    top: 12px;
+}
+
+#body .Idnumber-close, #body2 .Idnumber-close {
+    top: 50px;
+    left: 240px;
+    background: url('../image/spritesheet.png') -3px -83px no-repeat;
+}
+
+#body .Idnumber-close {
+    top: 87px;
+}
+
+#body2 .Idnumber-close {
+    top: 49px;
+}
+
+#body .password-close, #body2 .password-close, #body2 .again_password-close {
+    top: 123px;
+    left: 240px;
+    background: url('../image/spritesheet.png') -3px -83px no-repeat;
+}
+
+#body2 .password-close {
+    top: 86px;
+}
+
+#body2 .again_password-close {
+    top: 123px;
+}
+
+#error-box .info, #error-box2 .info1 {
+    display: block;
+    position: absolute;
+    left: 82%;
+    top: 102px;
+    z-index: 30;
+}
+
+#error-box2 .info1 {
+    left: 76%;
+    top: 64px;
+}
+
+#error-box .info li, #error-box2 .info1 li {
+    list-style: none;
+    padding-left: 8px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    width: 132px;
+    margin-bottom: 8px;
+}
+
+#error-box .error, #error-box2 .error {
+    background: url(../image/4-153.jpg) -102px -450px no-repeat;
+}
+
+
+/*#error-box2 .right {
+    background: url(../image/spritesheet2.png) -13px -26px no-repeat;
+}*/
+
+#body dt, #body2 dt {
+    font-weight: bold;
+    display: block;
+    float: left;
+    width: 65px;
+    text-align: right;
+}
+
+
+/*登录框中的dt*/
+
+#body dt, dd, #body2 dt, dd {
+    line-height: 25px;
+    float: left;
+    height: 25px;
+    padding: 6px 12px;
+}
+
+#body .content, #body2 .content {
+    position: relative;
+    top: -20px;
+}
+
+
+/*面板的内容层*/
+
+
+/*#body span, #body2 span {
+    position: relative;
+    top: 20px;
+    left: 15px;
+    float: left;
+    margin-left: 13px;
+}*/
+
+#body span {
+    position: relative;
+    top: 20px;
+    left: 15px;
+    /*  float: left;*/
+    margin-left: 13px;
+}
+
+#body2 span {
+    position: relative;
+    top: 20px;
+    left: 15px;
+    float: left;
+    margin-left: 15px;
+}
+
+#body .remember {
+    width: 30px;
+    position: relative;
+    top: -10px;
+}
+
+#body .remember_secreate {
+    width: 30px;
+    position: relative;
+    top: -14px;
+}
+
+#body .forget_secrete {
+    width: 30px;
+    margin-left: 50px;
+    position: relative;
+    top: -14px;
+}
+
+
+/*登录按钮外包裹*/
+
+#body input, #body2 input {
+    padding-left: 25px;
+    line-height: 20px;
+    width: 130px;
+    /*    height: 20px;*/
+    border: 2px solid #ddd;
+}
+
+
+/*登录框中的input*/
+
+#body .box_close, #body2 .box_close {
+    position: relative;
+    top: -65px;
+    left: 310px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    background: url(../image/boxy_btn.png) no-repeat;
+}
+
+
+/*关闭窗口*/
+
+#body .pic1, #body .pic2, #body .pic3, #body2 .pic4, #body2 .pic5, #body2 .pic6 {
+    width: 75px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid green;
+    background: url(../image/login_sub.gif) no-repeat;
+}
+
+#body .pic2 {
+    background: url(../image/login_exit.gif) no-repeat;
+}
+
+#body .pic3 {
+    background: url(../image/login_btn.png)-18px -4px no-repeat;
+}
+
+#body2 .pic4 {
+    font-weight: bold;
+    color: #f93;
+    line-height: 30px;
+    padding-left: 2px;
+    background: rgb(75, 167, 218);
+}
+
+#body2 .pic5 {
+    font-weight: bold;
+    color: white;
+    line-height: 30px;
+    padding-right: 25px;
+    background: rgb(75, 167, 218);
+}
+
+#body2 .pic6 {
+    font-weight: bold;
+    color: blue;
+    line-height: 30px;
+    padding-left: 2px;
+    background: rgb(75, 167, 218);
+}
+
+
+/*退出按钮*/
+
+#foot_line {
+    position: relative;
+    top: 501px;
+    height: 12px;
+    background: url(../image/loginfooterline.jpg) repeat-x;
+}
+
+
+/*下界线*/
+
+#foot_title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -15%;
+    text-align: center;
+}
+
+#foot_title .foot_a {
+    cursor: default;
+}
+
+
+/*脚注*/
+
+#foot_title address {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*脚注地址*/
+
+#foot_title a {
+    color: black;
+}
+
+#foot_title .foot_a {
+    text-decoration: none;
+}
+
+
+/*ctrl+p  命令中输入@就可以查看所有css
+用relative布局时，随着新标签的加入，会导致他之后的其他相对布局的变化
+*/
+
+
+/*关于绝对布局和相对布局新的认识，相对布局不断的加入会导致空间不断变大，二绝对布局是脱离文档流的，不会变大*/

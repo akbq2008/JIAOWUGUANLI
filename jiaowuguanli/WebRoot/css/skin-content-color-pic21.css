@@ -1,0 +1,10 @@
+#skin .checked {
+    width: 33px;
+    height: 33px;
+    border: 2px solid black;
+}
+
+body {
+    background: url(../image/preview20.jpg) no-repeat;
+    background-size: cover;
+}

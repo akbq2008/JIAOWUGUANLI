@@ -1,0 +1,74 @@
+#main-box {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -200px;
+    text-align: center;
+    display: block;
+    background: #999;
+    width: 400px;
+    height: 290px;
+}
+
+
+/*margin 负值可以减少因relative产生的空白空间*/
+
+#btn {
+    cursor: pointer;
+    color: white;
+    font: 18px/20px arial;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    background: #438EF4;
+    position: relative;
+    left: 150px;
+    top: 30px;
+}
+
+#main .main-box-turnback {
+    position: relative;
+    left: 30px;
+    top: 50px;
+}
+
+#main-box dl {
+    padding-top: 15px;
+    margin-top: 15px;
+    margin-left: 70px;
+    position: relative;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#turninto, #turninto2 {
+    cursor: pointer;
+}
+
+#v_container {
+    position: absolute;
+    left: 280px;
+    top: 200px;
+}
+
+#main-box dt, #main-box dd {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+#main-box dd {
+    width: 100px;
+}
+
+#main-box input {
+    float: left;
+    width: 120px;
+    clear: both;
+}
+
+#main .error {
+    color: red;
+}

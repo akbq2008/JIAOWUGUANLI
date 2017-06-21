@@ -1,0 +1,587 @@
+@charset="gb2312";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 16px/24px "宋体" arial;
+    overflow-x: hidden;
+    /* background: url(../image/u=3474258384,3167604542&fm=23&gp=0.jpg) -5px -5px no-repeat;*/
+    background-size: cover;
+}
+
+#skin {
+    height: 400px;
+    display: none;
+}
+
+
+/*整个皮肤最外层*/
+
+#skin .skin-content-pic {
+    position: relative;
+    left: 50%;
+    width: 1100px;
+    height: 308px;
+    margin: 10px -550px 0px;
+}
+
+
+/* 整个皮肤选择层*/
+
+
+/*left50%，margin-left 一半就可以实现居中  */
+
+#skin .pagenum {
+    margin-left: 200px;
+}
+
+
+/*当前页数*/
+
+#skin .skin-content-pics-container {
+    position: relative;
+    left: 50%;
+    top: 15px;
+    margin-left: -495px;
+    width: 990px;
+    height: 278px;
+    overflow: hidden;
+    /*这个overflow是遮盖其他的还没有点击轮到的面板*/
+}
+
+
+/*一个页面显示的容器*/
+
+#skin .pagenum {
+    width: 60px;
+    height: 34px;
+}
+
+#skin .prev {
+    position: relative;
+    top: -172px;
+    left: -483px;
+    display: inline-block;
+    height: 32px;
+    width: 40px;
+    margin: 44px 20px;
+    /*    background: black; */
+    background: url('../image/nextprev.png') -5px -5px no-repeat;
+}
+
+#skin .next {
+    position: relative;
+    float: right;
+    width: 40px;
+    top: -172px;
+    left: 13px;
+    display: inline-block;
+    height: 32px;
+    margin: 44px 20px;
+    background: url('../image/nextprev.png') -5px -47px no-repeat;
+}
+
+#skin .online-pics {
+    float: left;
+    margin-left: 10px;
+    margin-top: 9px;
+    width: 186px;
+    height: 130px;
+}
+
+
+/*在线图片及文字盒子*/
+
+#skin .skin-content-pics-pages {
+    position: relative;
+    height: 278px;
+    width: 4000px;
+}
+
+
+/*页层*/
+
+#skin .skin-pics-page {
+    float: left;
+    height: 278px;
+    width: 990px;
+}
+
+
+/*页面里面的盒子*/
+
+#skin .online-pics img {
+    width: 186px;
+    height: 88px;
+    margin-bottom: 10px;
+}
+
+#skin .online-pics img:hover {
+    border: 1px solid blue;
+}
+
+#skin .online-pics a {
+    display: block;
+    width: 186px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#skin .skin-top {
+    height: 35px;
+    line-height: 35px;
+    background: white;
+}
+
+
+/*皮肤层顶层*/
+
+#skin .skin-content-color-class, #skin .skin-content-color-default, #skin .skin-content-color-blue, #skin .skin-content-color-green, #skin .skin-content-color-yellow, #skin .skin-content-color-pink, #skin .skin-content-color-red {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 10px;
+}
+
+
+/*皮肤层普通颜色选择层*/
+
+#skin .skin-content-color-class {
+    background: white;
+}
+
+#skin .skin-content-color-default {
+    background: url(../image/u=3474258384,3167604542&fm=23&gp=0.jpg) no-repeat;
+}
+
+
+/* 如果单纯的为.checked的话，优先级没有前面的高,导致checked样式显示不出来。 */
+
+#skin .skin-content-color-blue {
+    background: #1296db;
+}
+
+#skin .skin-content-color-green {
+    background: #1afa29;
+}
+
+#skin .skin-content-color-yellow {
+    background: #f4ea2a;
+}
+
+#skin .skin-content-color-pink {
+    background: #d4237a;
+}
+
+#skin .skin-content-color-red {
+    background: #d81e06;
+}
+
+#skin .skin-cancel, #skin .skin-recover, #skin .skin-save {
+    font: arial;
+    width: 99px;
+    text-align: center;
+    border-left: 1px solid #F7F7F7;
+    color: black;
+    text-decoration: none;
+    float: right;
+    background: #D5D9DA;
+}
+
+
+/*皮肤层顶层按钮*/
+
+#skin .skin-top a:hover {
+    background: #7FC0FF;
+}
+
+
+/*这里如果得这样才能使保存上色，不然没覆盖不了*/
+
+
+/*皮肤层顶层a标签*/
+
+#skin .skin-save {
+    margin-right: 280px;
+    background: #2394FF;
+}
+
+
+/*控制距右边边距*/
+
+#skin .skin-content {
+    text-align: center;
+    height: 366px;
+    background: #ccc;
+}
+
+
+/*皮肤颜色选择层  */
+
+#skin .skin-content-color {
+    height: 34px;
+    line-height: 34px;
+    margin-bottom: 15px;
+}
+
+
+/* 默认颜色选择层 */
+
+
+/* 皮肤选择层*/
+
+#top {
+    height: 120px;
+}
+
+
+/*表提层*/
+
+#top .main-page, #top .select-classes, #top .select-personal-informations, #top .modift-secreates {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: 30px;
+    background: url(../image/student.png) 0px 0px no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+
+/*这格是i图片  */
+
+#top .top-pic {
+    cursor: pointer;
+}
+
+#top .main-page {
+    background: url(../image/student.png) -5px -227px no-repeat;
+}
+
+#top .select-classes {
+    background: url(../image/student.png) -5px -153px no-repeat;
+}
+
+#top .modift-secreates {
+    background: url(../image/student.png) -5px -78px no-repeat;
+}
+
+#top .txt {
+    position: relative;
+    top: -20px;
+    text-align: center;
+    display: block;
+    width: 120px;
+    height: 20px;
+    display: block;
+    text-decoration: none;
+}
+
+#top ul .top-username {
+    position: relative;
+    top: -10px;
+    left: 140px;
+    display: block;
+    color: black;
+    cursor: text;
+}
+
+
+/*text-align会影响绝对布局的left  */
+
+
+/*因为后面还有子ul，所以这不能用absolute， 不然的话就重叠了  */
+
+
+/*头部用户名信息,参照头像进行定位  */
+
+#top .top-userpic {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    left: 80px;
+    border-radius: 120px;
+    background: url(../image/20151025172434_2kaTA.thumb.700_0.jpg) 0px 0px no-repeat;
+}
+
+
+/*头像*/
+
+#top .top-userpic:hover {
+    border: 2px solid #f93;
+}
+
+
+/* 头像滑动 */
+
+#top .subNav li {
+    text-align: center;
+    position: relative;
+    background: #090723;
+    z-index: 200;
+    top: 50px;
+    left: -40px;
+    display: none;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/* 子标签 */
+
+#top .subNav li a {
+    text-decoration: none;
+}
+
+#top .subNav li:hover {
+    background: #242424;
+}
+
+
+/*子标签滑动  */
+
+#top .top-list {
+    position: absolute;
+    left: 50%;
+    margin-left: -290px;
+}
+
+
+/*头部大标签*/
+
+#top .top-list li {
+    list-style: none;
+    float: left;
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin-left: 20px;
+}
+
+
+/*头部大标签*/
+
+.selected {
+    background-color: #4CA7A8;
+    border-bottom: 2px solid black;
+}
+
+.hover {
+    background: #7FC0FF;
+}
+
+
+/*头部li标签*/
+
+#top .top-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/*头部li下面的a*/
+
+#top .top-weather-time {
+    width: 350px;
+    font: arial;
+    height: 120px;
+    font-size: 14px;
+    position: relative;
+    left: 70%;
+    top: -55px;
+}
+#top .weather-img{
+	display:inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+/*因为这里的布局没有设置宽度，导致后面的换肤设置有问题*/
+
+.down, .up {
+    position: absolute;
+    top: 35px;
+    left: -15px;
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background: url(../image/upanddown.png) -5px -31px no-repeat;
+}
+
+.up {
+    background: url(../image/upanddown.png) -5px -5px no-repeat;
+}
+
+#top .move-box {
+    display: none;
+}
+
+#top .top-useroption span p {
+    position: relative;
+    cursor: pointer;
+    width: 45px;
+    height: 30px;
+    line-height: 30px;
+    top: -5px;
+    padding-left: 15px;
+    left: 93%;
+}
+
+
+/*换肤按钮*/
+
+#top .top-useroption span p:hover {
+    background: #7FC0FF;
+}
+
+
+/*换肤按钮*/
+
+#main {
+    height: 540px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*main 最外层*/
+
+#main .main-box {
+    position: relative;
+    left: 50%;
+    margin-left: -740px;
+    width: 1480px;
+    height: 400px;
+    background: rgba(106, 145, 160, 0.6);
+    -webkit-box-shadow: 5px 8px 5px;
+    -moz-box-shadow: 5px 8px 5px;
+    box-shadow: 5px 8px 5px;
+    -o-box-shadow: 5px 8px 5px;
+}
+
+
+/*整个盒子，包括3个盒子*/
+
+#main .box-title {
+    margin-left: 180px;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    line-height: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-family: arial;
+    color: #fff;
+}
+
+
+/*盒子里面的标题*/
+
+#main .box {
+    width: 480px;
+    height: 340px;
+    margin-top: 30px;
+    line-height: 340px;
+    float: left;
+    margin-left: 10px;
+    display: inline-block;
+    float: left;
+}
+
+
+/*盒子的共有样式*/
+
+#main .box ul li {
+    display: block;
+    list-style: none;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*3个盒子共有的属性*/
+
+#main .pic {
+    float: left;
+    width: 10px;
+    margin-right: 10px;
+    margin-top: 8px;
+    height: 10px;
+    background: url(../image/index_news_dot.gif) no-repeat;
+    height: 10px;
+}
+
+
+/*a标签前面的图片*/
+
+#moocBox, #moocBox2, #moocBox3 {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+#moocBox3 {
+    height: 170px;
+}
+
+#main .box ul li a {
+    float: left;
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+#main .box ul li a:hover {
+    color: #f93;
+}
+
+
+/*span中的a标签*/
+
+#main .box ul li span {
+    float: right;
+    margin-right: -70px;
+    color: #2c2c2c;
+}
+
+
+/*span中的时间*/
+
+#foot_title {
+    position: relative;
+    text-align: center;
+}
+
+#foot_title .foot_a {
+    cursor: default;
+}
+
+
+/*脚注*/
+
+#foot_title address {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/*脚注地址*/
+
+#foot_title a {
+    color: black;
+}
+
+#foot_title .foot_a {
+    text-decoration: none;
+}
+
+
+/*脚注*/

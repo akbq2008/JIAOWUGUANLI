@@ -1,0 +1,187 @@
+    * {
+        margin: 0;
+        padding: 0
+    }
+    
+    #main {
+        text-align: center;
+        height: 510px;
+        position: relative;
+    }
+    
+    #main .checked {
+        color: green;
+    }
+    
+    #main .main-left {
+        margin-left: 200px;
+        width: 201px;
+        position: relative;
+        left: 0px;
+        height: 510px;
+        background: #DBEAF9;
+        float: left;
+    }
+    /*左边盒子*/
+    
+    #main .main-left dt {
+        font: bold 15px arial;
+        line-height: 24px;
+        height: 24px;
+        background: url(../image/menubg.gif) no-repeat;
+    }
+    /*左边盒子大标题*/
+    
+    #main .main-left dd {
+        width: 201px;
+        height: 20px;
+    }
+    /*左边盒子小标题*/
+    
+    #main .main-left-pic {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        clear: both;
+        /*这里影响了下面的*/
+        float: left;
+        background: url(../image/tree0.gif) no-repeat;
+    }
+    /*左边盒子的小方框*/
+    
+    #main .main-left dd p {
+        display: inline-block;
+        text-align: left;
+        width: 80px;
+        height: 20px;
+        line-height: 20px;
+        float: left;
+    }
+    
+    #main .hover {
+        color: red;
+    }
+    
+    #main .main-right {
+        display: none;
+        text-align: center;
+        position: relative;
+        height: 500px;
+        margin-left: 208px;
+        background: #F4FFFB;
+    }
+    /*右边布局*/
+    
+    #main .main-right-box {
+        position: absolute;
+        left: 50%;
+        top: 50px;
+        margin-left: -250px;
+        height: 500px;
+        width: 500px;
+        background-size: cover;
+        background: url(../image/u=1646463034,3042594389&fm=23&gp=0.jpg) no-repeat;
+    }
+    
+    #main .pic-information {
+        position: relative;
+        width: 800px;
+        height: 30px;
+        top: -80px;
+        left: 40%;
+        margin-left: -400px;
+        letter-spacing: 20px;
+        font: bold 20px/24px arial;
+    }
+    /*文字信息*/
+    
+    .main-open-close {
+        position: absolute;
+        left: 201px;
+        top: 245px;
+        cursor: pointer;
+        display: block;
+        width: 7px;
+        height: 50px;
+        background: url(../image/push.gif);
+    }
+    /*面板伸缩*/
+    
+    #main .main-serarch-box {
+        margin-left: 408px;
+        width: 800px;
+        background: #F4FFFB;
+    }
+    /*查询层*/
+    
+    #main .main-serarch-box tr {
+        width: 800px;
+        height: 30px;
+        line-height: 30px;
+    }
+    
+    #main .main-serarch-box td {
+        width: 100px;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+    }
+    
+    #main .main-serarch-box th {
+        width: 200px;
+        margin: 0 auto;
+        border: 1px solid #4A4A4A;
+    }
+    
+    #main .box-title {
+        color: #4B4B4B;
+        background: url(../image/top_bg.jpg) repeat-x;
+    }
+    
+    #main .odd {
+        background: #f93;
+    }
+    
+    #main .current {
+        background: #bfbfbf;
+    }
+    
+    #main .delete-pic {
+        cursor: pointer;
+        width: 40px;
+        padding-left: 31px;
+        padding-top: 7px;
+        height: 40px;
+        line-height: 40px;
+        background: url(../image/add-delete.png) -6px -49px no-repeat;
+    }
+    
+    #main .add-pic {
+        cursor: pointer;
+        padding-left: 26px;
+        padding-top: 4px;
+        height: 40px;
+        line-height: 40px;
+        background: url(../image/add-delete.png) -8px -7px no-repeat;
+    }
+    
+    #main .pager, #main .pager2 {
+        display: none;
+        width: 800px;
+        border-top: 2px solid #6B86B3;
+        margin-left: 408px;
+        background: #F4FFFB;
+    }
+    
+    #main .currentPage, #main .currentPage2 {
+        color: red;
+    }
+    
+    #main .pager a, #main .pager2 a {
+        margin-right: 15px;
+        text-decoration: none;
+    }
+    
+    #main .pager a:link, #main .pager a:visit, #main .pager2 a:link, #main .pager2 a:visit {
+        color: blue;
+    }

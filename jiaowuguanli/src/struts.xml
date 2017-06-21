@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<package name="login" namespace="/" extends="struts-default">
+		<action name="login" class="com.servlet.Handlelogin" method="login">
+			<result name="teacher" type="redirect">teacher/teacher.jsp</result>
+			<result name="admin" type="redirect">admin/admin.jsp</result>
+			<result name="student" type="redirect">student/student.jsp</result>
+		</action>
+		<action name="Handleexit" class="com.servlet.Handleexit"
+			method="exit">
+			<result name="Handleexit" type="redirect">login.html</result>
+		</action>
+		<action name="registerServlet" class="com.servlet.HandleRegister"
+			method="register">
+			<result name="registerServlet" type="redirect">login.html</result>
+		</action>
+		<action name="Handlemodify" class="com.servlet.Handlemodify"
+			method="modify">
+			<result name="Handlemodify" type="redirect">login.html</result>
+		</action>
+		<action name="searchclasses" class="com.servlet.Handlesearchcl"
+			method="searchclasses">
+			<result name="student" type="redirect">student/searchclasses.jsp
+			</result>
+		</action>
+		<action name="Handlexuanke" class="com.servlet.Handlexuanke"
+			method="xuanke">
+			<result name="student" type="redirect">student/searchclasses.jsp
+			</result>
+		</action>
+		<action name="Handlexuankedel" class="com.servlet.Handlexuankedel"
+			method="Handlexuankedel">
+			<result name="student" type="redirect">student/searchclasses.jsp
+			</result>
+		</action>
+		<action name="Handlexuankeresult" class="com.servlet.Handlexuankeresult"
+			method="Handlexuankeresult">
+			<result name="student" type="redirect">student/searchclasses.jsp
+			</result>
+		</action>
+		<action name="personnal" class="com.servlet.Handlepersonnal"
+			method="personnal">
+			<result name="student" type="redirect">student/personnal.jsp
+			</result>
+		</action>
+		<!-- 学生信息 -->
+		<action name="SearchStudentmessages" class="com.admin.SearchStudentmessages"
+			method="SearchStudentmessages">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<action name="ModifyStudentmessages" class="com.admin.ModifyStudentmessages"
+			method="ModifyStudentmessages">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<!-- 学生信息 -->
+		<!-- 教师信息 -->
+		<action name="SearchTeachermessages" class="com.admin.SearchTeachermessages"
+			method="SearchTeachermessages">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<action name="ModifyTeachermessages" class="com.admin.ModifyTeachermessages"
+			method="ModifyTeachermessages">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<!-- 教师信息 -->
+		<!-- 管理员信息 -->
+		<action name="Addadmin" class="com.admin.Addadmin" method="Addadmin">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<action name="Deladmin" class="com.admin.Deladmin" method="Deladmin">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<!-- 管理员信息 -->
+		<!-- 课程信息 -->
+		<action name="Searchclass" class="com.admin.Searchclass"
+			method="Searchclass">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<action name="Modifyclass" class="com.admin.Modifyclass"
+			method="Modifyclass">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<action name="Addclass" class="com.admin.Addclass" method="Addclass">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<action name="Delclass" class="com.admin.Delclass" method="Delclass">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<!-- 课程信息 -->
+		<!-- 教学安排信息 -->
+		<action name="Searchplan" class="com.admin.Searchplan" method="Searchplan">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<action name="Modifyplan" class="com.admin.Modifyplan" method="Modifyplan">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<action name="Addplan" class="com.admin.Addplan" method="Addplan">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<action name="Delplan" class="com.admin.Delplan" method="Delplan">
+			<result name="admin" type="redirect">admin/admin.jsp
+			</result>
+		</action>
+		<!-- 教学安排信息 -->
+	</package>
+</struts>
